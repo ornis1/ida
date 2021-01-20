@@ -1,9 +1,9 @@
 export const state = () => ({
-  overlay: false,
+  sidebar: false,
 })
 
 export const mutations = {
-  SET_OVERLAY(state, payload = true) {
-    state.overlay = payload
+  TOGGLE_SIDEBAR(state) {
+    state.sidebar = !state.sidebar
   },
 }
