@@ -3,9 +3,12 @@
 @import './fonts.scss';
 
 .container {
+  $padding: 20px;
+  $width: 1266px;
+
   margin: 0 auto;
-  max-width: 1148px;
-  display: flex;
+  max-width: calc(#{$width} + calc(#{$padding} * 2));
+  padding: 0 20px;
 }
 
 html {
@@ -26,6 +29,15 @@ body {
   height: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-size: inherit;
+}
+
 h1 {
   font-size: 32px;
   font-style: normal;
@@ -44,4 +56,28 @@ a:hover {
 a:focus,
 a:active {
   outline: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.svg-icon {
+  display: flex;
+}
+
+section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
