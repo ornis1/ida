@@ -86,7 +86,10 @@ body.no-scroll {
 
 body.overlay {
   position: relative;
+
   &::after {
+    user-select: auto;
+    pointer-events: all;
     z-index: 1;
     display: block;
     content: '';
@@ -104,4 +107,22 @@ body.overlay {
 *::after,
 *::after {
   box-sizing: border-box;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex {
+  flex: 1;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
 }
