@@ -9,9 +9,9 @@ export default {
       handler(val) {
         if (!process.browser) return
         if (val) {
-          document.body.classList.add('no-scroll')
+          document.body.classList.add('overlay')
         } else {
-          document.body.classList.remove('no-scroll')
+          document.body.classList.remove('overlay')
         }
       },
       immediate: true,
