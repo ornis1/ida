@@ -4,3 +4,14 @@ $grey: #59606d;
 $white: #ffffff;
 $grey-light: #959dad;
 $grey-extra-light: #f8f8f8;
+$yellow: #f2c94c;
+
+:export {
+  appbg: $appBg;
+  black: $black;
+  grey: $grey;
+  white: $white;
+  greyLight: $grey-light;
+  greyExtraLight: $grey-extra-light;
+  yellow: $yellow;
+}

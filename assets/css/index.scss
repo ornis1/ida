@@ -17,12 +17,14 @@ html {
   font-size: 16px;
   line-height: 21px;
   color: $black;
+  height: 100%;
 }
 
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  height: 100%;
 }
 
 #app {
@@ -80,4 +82,26 @@ ul {
 
 body.no-scroll {
   overflow: hidden;
+}
+
+body.overlay {
+  position: relative;
+  &::after {
+    z-index: 1;
+    display: block;
+    content: '';
+    background: #ffffff;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+*,
+*::after,
+*::after {
+  box-sizing: border-box;
 }
