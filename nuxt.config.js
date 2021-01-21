@@ -14,10 +14,10 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/css', 'normalize.css/normalize.css'],
+  css: ['normalize.css/normalize.css', '@/assets/css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~plugins/mask'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -29,8 +29,11 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['nuxt-svgicon'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  env: {
+    API_URL: process.env.API_URL,
+  },
 }

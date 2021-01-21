@@ -14,7 +14,9 @@
     "axios": "^0.21.1",
     "core-js": "^3.8.2",
     "normalize.css": "^8.0.1",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "nuxt-svgicon": "^1.2.7",
+    "v-mask": "^2.2.3"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
