@@ -3,6 +3,9 @@
 ## Build Setup
 
 ```bash
+Установить переменную окружения в .env
+API_URL=https://frontend-test.idaproject.com
+
 # install dependencies
 $ yarn install
 
